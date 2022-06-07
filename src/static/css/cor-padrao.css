@@ -1,6 +1,7 @@
 @charset "UTF-8";
 :root{
     --red: #DF1C24;/*Cor utilizada no bg do header e botões*/
+    --redhover: #c30707ea; /*ytilizado para estilização hover*/
     --blue: #312780;/*cor utilizada no bg do footer e bg busca*/
     --white: #FFFFFF;/*Cor texto*/
 }
