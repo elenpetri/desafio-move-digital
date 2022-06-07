@@ -1,0 +1,27 @@
+.bg-header{
+    background-color: var(--red);
+}
+
+.botao-header{
+    border: none;
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.cor-icone{
+    color: var(--white);
+}
+
+@media (max-width: 1024px){
+    .img-logo {
+        width: 80%;
+        }
+    
+    .txt-botao-header {
+        visibility: visible;
+        visibility: hidden;
+        visibility: collapse;
+        display: none;
+        }
+    }

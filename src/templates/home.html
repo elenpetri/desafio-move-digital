@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="/static/css/home.css">
+    <link rel="stylesheet" href="/static/css/global.css">
+    <link rel="stylesheet" href="/static/css/cor-padrao.css">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="/static/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/bootstrap-icons-1.8.3/bootstrap-icons.css">
+    <script src="/static/bootstrap-5.2.0-beta1-dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  <header
+    class="d-flex flex-wrap align-items-center justify-content-around justify-content-md-between py-3 pt-5 pt-md-2 pt-sm-5 ps-lg-5 bg-header">
+    <a href="/" class="d-flex align-items-center pe-3">
+      <img class="img-logo" src="/static/imagens/logo.PNG" alt="Logo Franco Consultoria de Imóveis">
+    </a>
+
+    <div class="col-md-3 text-end pe-lg-5 botao-header">
+      <span class="txt-botao-header botao-header"> Buscar Lançamentos </span>
+      <button type="button" class="btn me-2 botao-header "><i class="bi bi-search cor-icone"></i>
+    </button>
+    <span class="txt-botao-header botao-header">Menu</span>
+      <button type="button" class="btn botao-header"></i> <i class="bi bi-list cor-icone"></i>
+    </button>
+    </div>
+  </header>
+
+  <main>
+    <div class="bd-example">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators justify-content-start">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="bg-btn-carrosel" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class="active bg-btn-carrosel" aria-current="true"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" class="bg-btn-carrosel"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item">
+            <img src="/static/imagens/web-banner-test.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item active">
+            <img src="/static/imagens/web-banner-2-test.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+      </div>
+      </div>
+  </main>
+
+<script>
+  const myCarousel = document.getElementById('myCarousel')
+
+myCarousel.addEventListener('slide.bs.carousel', event => {
+  // do something...
+})
+</script>
+
+</body>
+
+</html>
