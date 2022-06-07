@@ -7,7 +7,6 @@
     <title>Home</title>
 
     <link rel="stylesheet" href="/static/css/home.css">
-    <link rel="stylesheet" href="/static/css/global.css">
     <link rel="stylesheet" href="/static/css/cor-padrao.css">
 
     <!-- Bootstrap core CSS -->
@@ -24,14 +23,72 @@
     </a>
 
     <div class="col-md-3 text-end pe-lg-5 botao-header">
-      <span class="txt-botao-header botao-header"> Buscar Lançamentos </span>
-      <button type="button" class="btn me-2 botao-header "><i class="bi bi-search cor-icone"></i>
+      <button type="button" class="btn me-2 botao-header " type="button" data-bs-toggle="collapse" data-bs-target="#collapseMenu" aria-expanded="false" aria-controls="collapseMenu"> <span class="txt-botao-header">Buscar Lançamentos</span>  <i class="bi bi-search cor-icone"></i>
     </button>
-    <span class="txt-botao-header botao-header">Menu</span>
-      <button type="button" class="btn botao-header"></i> <i class="bi bi-list cor-icone"></i>
+    
+      <button type="button" class="btn botao-header"></i><span class="txt-botao-header">Menu</span> <i class="bi bi-list cor-icone"></i>
     </button>
     </div>
   </header>
+
+  <div class="collapse" id="collapseMenu">
+    <div class="bg-busca">
+      <div class="container nav-pills">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-6 area-busca">
+          <div class="col">
+            <span class="txt-area-busca">Cidade</span>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Todas</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="col">
+            <span class="txt-area-busca ">Empreendimento</span>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Todas</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select></div>
+          <div class="col">
+            <span class="txt-area-busca">Tipo</span>
+            <select class="form-select select-area-busca" aria-label="Default select example">
+              <option selected>Todas</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="col">
+            <span class="txt-area-busca">Nº de Dormitórios</span>
+            <select class="form-select select-area-busca" aria-label="Default select example">
+              <option selected>Todas</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="col">
+            <span class="txt-area-busca">Estágio da Obra</span>
+            <select class="form-select select-area-busca" aria-label="Default select example">
+              <option selected>Todas</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="col area-busca d-flexjustify-content-between">
+            
+            <button type="submit" id="btn-area-busca" class="btn">Buscar <i class="bi bi-search"></i></button>
+            <button type="button" id="btn-close-area-busca" class="btn" data-bs-toggle="collapse" data-bs-target="#collapseMenu" aria-controls="collapseMenu"><i class="bi bi-x"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      </div>
+  </div>
 
   <main>
     <div class="bd-example">
