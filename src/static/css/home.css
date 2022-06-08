@@ -1,3 +1,13 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'GothamMedium_1' ;
+    src: url('../fontes/GothamMedium_1.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'GothamBook' ;
+    src: url('../fontes/GothamBook.ttf') format('truetype');
+}
 /* HEADER */
 .bg-header {
     background-color: var(--red);
@@ -130,6 +140,36 @@
     border-radius: 3px;
     font-weight: 600;
     border: none;
+}
+
+/*Conteúdo album*/
+
+.card.card-style {
+    border-width: 0;
+}
+
+.h1-txt-card {
+    color: var(--titulocard); /*Duomo Residencial*/
+    font-size: 28px;
+    font-weight: 400;
+    font-family: 'GothamMedium_1';
+}
+
+.card-text{ /*Ubatuba, a Praia Grande e 2 ou 3 (1 a 3 suítes) 92m² ou 201m²*/
+    color: black; 
+    font-size: 18px;
+    font-family: 'GothamMedium_1';
+}
+
+.icon-card{
+    color: var(--red);
+    font-size: larger;
+}
+
+.btn.btn-sm.button-card{ /*MAIS DETALHES*/
+    font-family: 'GothamBook';
+    color: var(--red);
+    font-size: 14px;
 }
 
 /* ============================*/

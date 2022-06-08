@@ -4,4 +4,7 @@
     --redhover: #c30707ea; /*ytilizado para estilização hover*/
     --blue: #312780;/*cor utilizada no bg do footer e bg busca*/
     --white: #FFFFFF;/*Cor texto*/
+
+    --titulocard:#737380; /*Cor dos h1 dos cards do album*/
+
 }
