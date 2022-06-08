@@ -1,5 +1,4 @@
 /* HEADER */
-
 .bg-header {
     background-color: var(--red);
 }
@@ -25,95 +24,7 @@
     color: var(--white);
 }
 
-@media (max-width: 1024px) {
-    .img-logo {
-        width: 80%;
-    }
-
-    .txt-botao-header {
-        visibility: visible;
-        visibility: hidden;
-        visibility: collapse;
-        display: none;
-    }
-
-    .botao-header-desktop{
-        display: none !important;
-    }
-
-    .txt-carrossel-1{
-        font-size: 30px !important;
-        color: black;
-        width: 90%!important;
-    }
-    
-    .sub-txt-carrossel-1 {
-        font-weight: 16;
-        font-size: 16px;
-        color: var(--red);
-        width: 90%!important;
-    }
-
-    .carousel-caption{
-        position: relative!important;
-    }
-
-    .btn.button-saiba-mais{
-        background-color: var(--red);
-        color: var(--white);
-        border-radius: 3px;
-        border: none;
-        height: 48px;
-        width: 218px;
-        left: 1%;
-    }
-    
-    .btn.button-saiba-mais:hover{
-        background-color: black;
-        color: var(--white);
-        border: none;
-        
-    }
-}
-
-@media (min-width: 1024px) {
-    .botao-header-mobile{
-        display: none !important;
-    }
-
-    .txt-carrossel-1{
-        font-weight: 300;
-        font-size: 68px;
-        width: 25%!important;
-    }
-
-    .sub-txt-carrossel-1 {
-        font-weight: 400;
-        font-size: 26px;
-        line-height: 48px;
-        color: var(--red);
-    }
-
-    .btn.button-saiba-mais{
-        background-color: var(--red);
-        color: var(--white);
-        border-radius: 3px;
-        border: none;
-        height: 48px;
-        width: 210px;
-        left: 1%;
-    }
-    
-    .btn.button-saiba-mais:hover{
-        background-color: black;
-        color: var(--white);
-        border: none;
-        
-    }
-}
-
 /* ÁREA DE BUSCA */
-
 .bg-busca {
     background-color: var(--blue) !important;
 }
@@ -167,25 +78,38 @@
 }
 
 /* CARROSSEL */
-.bg-btn-carrosel {
-    background-color: black !important;
+#btn-carrossel-div button{
+   background-color: #EEEEEE;
 }
 
-.carousel-caption.carousel-caption-1{
-    right: 0;
-    text-align: left;
-    left: 5%;
-    padding-bottom: 3rem;
+.carousel-indicators.justify-content-start{
+    margin-left: 6rem;
 }
 
+/*====Carrossel 2====*/
+#carrossel-2{ /*Todo conteudo da div incluindo h1, h2, button, etc*/
+    text-align: start;
+    left: 6%;
+}
 
+.h1-carrossel-2{ /*Lançamento!*/
+    color: black;
+}
 
+.h2-carrossel-2{ /*Loteamento fechado de alto padrão em Taubaté!*/
+    color: black;
+    font-size: 42px;
+    width: 665px;
+    padding-top: 0.5rem;
+}
 
-
-
+.sub-txt-carrossel-2{ /*Terrenos de 250m² a 550m*/
+    color: #737380;
+    font-size: 26px;
+    font-weight: 400;
+}
 
 /* Modal Buscar Lançamentos (Mobile)*/
-
 .txt-area-busca-mobile {
     padding: 1.5rem;
     font-weight: 400;
@@ -207,3 +131,169 @@
     font-weight: 600;
     border: none;
 }
+
+/* ============================*/
+/*RESPONSIVO Max-width*/
+@media (max-width: 1024px) {
+    .img-logo {
+        width: 80%;
+    }
+
+    .txt-botao-header { /*inferior a 1024px esconde os textos dos botões do header que aparecem para desktop*/
+        visibility: visible;
+        visibility: hidden;
+        visibility: collapse;
+        display: none;
+    }
+
+    .botao-header-desktop{ /*esconde botão de Buscar lançamentos para exibir o botão em modo mobile*/
+        display: none !important;
+    }
+
+    #carouselExampleIndicators > div.carousel-inner > div.carousel-item.active > div > h1{
+        font-size: 35px;
+        width: 95%;
+    }
+
+    .txt-carrossel-1 {/*Novo conceito de inteligência desbloqueado.*/
+        color: var(--white);
+        font-weight: 300;
+    }
+    
+    .sub-txt-carrossel-1 { /*Apartamentos de 63,33m²*/
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--red);
+        width: 90%!important;
+    }
+
+    .carousel-caption{
+        position: relative!important;
+        bottom: 17rem !important;
+        left: 5% !important;
+    }
+
+    #carouselExampleIndicators > div.carousel-inner > div.carousel-item.active > div > div{ 
+        width: 205px;
+    }
+
+    #carouselExampleIndicators > div.carousel-inner > div.carousel-item.active > div > div{
+        padding-top: 0.5rem;
+    }
+
+    #carouselExampleIndicators > div.carousel-inner > div.carousel-item.active > div > div > button{
+        color: var(--white);
+        background-color: var(--red);
+        border-radius: 3px;
+        border: none;
+    }
+    
+    #carouselExampleIndicators > div.carousel-inner > div.carousel-item.active > div > div > button:hover{
+        background-color: black;
+        color: var(--white);
+        border: none;
+    }
+
+    #carouselExampleIndicators > div.carousel-indicators.justify-content-start{
+        bottom: 250px; 
+        color: var(--white);
+        margin-left: 50px;
+    }
+    .carousel-indicators.justify-content-start{
+        margin-left: 6rem;
+    }
+
+    .h2-carrossel-2{ /*Loteamento fechado de alto padrão em Taubaté!*/
+        color: black;
+        font-size: 32px;
+    }
+
+    .h2-carrossel-2{ /*Loteamento fechado de alto padrão em Taubaté!*/
+        font-size: 20px;
+        font-weight: 600;
+        width: 332px;
+    }
+
+    .sub-txt-carrossel-2{ /*Terrenos de 250m² a 550m*/
+        font-size: 20px;
+        font-weight: 300;
+    }
+    
+}
+
+/* ============================*/
+/*RESPONSIVO Min-width*/
+@media (min-width: 1024px) {
+    .botao-header-mobile{ /*esconde botão de Buscar lançamentos para exibir o botão em modo mobile*/
+        display: none !important;
+    }
+
+    .txt-carrossel-1{ /*Novo conceito de inteligência desbloqueado.*/
+        font-weight: 300;
+        width: 25%!important;
+        font-size: 60px;
+    }
+
+    .sub-txt-carrossel-1 { /*Apartamentos de 63,33m²*/
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 48px;
+        color: var(--red);
+    }
+
+    .btn.button-saiba-mais{
+        background-color: var(--red);
+        color: var(--white);
+        border-radius: 3px;
+        border: none;
+        height: 48px;
+        width: 210px;
+        left: 1%;
+    }
+    
+    .btn.button-saiba-mais:hover{
+        background-color: black;
+        color: var(--white);
+        border: none;
+    }
+
+    .carousel-caption.carousel-caption-1{
+        right: 0;
+        left: 5%;
+        padding-bottom: 3rem;
+    }
+
+    .carousel-caption{
+        left: 5%;
+    }
+
+    .h1-carrossel-2{ /*Lançamento!*/
+        font-weight: 300;
+        width: 25%!important;
+        font-size: 60px;
+    }
+
+}
+
+
+
+/* MODAL MENU
+.bg-menu{
+    background-image: url(/static/imagens/bg-menu.png);
+    background-repeat: no-repeat; 
+    background-size: 100%;  
+    
+}
+.bg-menu-right{
+    background-color: rgba(223, 28, 36, 0.91);;
+}
+
+.bg-menu-left{
+    background-color: rgba(49, 39, 128, 0.91);;
+
+
+
+
+ 
+
+}*/

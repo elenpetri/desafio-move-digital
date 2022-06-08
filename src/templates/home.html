@@ -19,7 +19,7 @@
 <body>
 
   <header
-    class="d-flex flex-wrap align-items-center justify-content-around justify-content-md-between py-3 pt-5 pt-md-2 pt-sm-5 ps-lg-5 bg-header">
+    class="d-flex flex-wrap align-items-center justify-content-around justify-content-md-between py-3 pt-md-2 pt-sm-5 ps-lg-5 bg-header">
     <a href="/" class="d-flex align-items-center pe-3">
       <img class="img-logo" src="/static/imagens/logo.PNG" alt="Logo Franco Consultoria de Imóveis">
     </a>
@@ -93,29 +93,141 @@
     <div class="bd-example">
       <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
         <div class="carousel-indicators justify-content-start">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="bg-btn-carrosel"
-            aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"
-            class="active bg-btn-carrosel" aria-current="true"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"
-            class="bg-btn-carrosel"></button>
+          <div id="btn-carrossel-div">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"
+            aria-current="true"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="#" aria-label="Slide 3"
+            ></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="#" aria-label="Slide 4"
+            ></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="#" aria-label="Slide 5"
+            ></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="#" aria-label="Slide 6"
+            ></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="#" aria-label="Slide 7"
+           ></button>
+          </div>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="/static/imagens/web-banner-test.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption carousel-caption-1 d-flex row text-wrap d-md-block ">
+            <picture>
+              <source media="(max-width: 1024px)" srcset="/static/imagens/mobile-banner.png" type="image/png">
+              <img src="/static/imagens/web-banner.png" class="d-block w-100" alt="Imagem Banner Bella Italia">
+            </picture>
+            
+            <div class="carousel-caption text-start carousel-caption-1 d-flex row text-wrap d-md-block ">
               <h1 class="txt-carrossel-1">Novo conceito de inteligência desbloqueado.</h1>
-              <p class="sub-txt-carrossel-1">Apartamentos de 63,33m2</p>
-              <button type="button" class="btn btn-lg button-saiba-mais ms-3"><i class="bi bi-plus-circle text-white"></i> SAIBA MAIS</button>
+              <p class="sub-txt-carrossel-1">Apartamentos de 63,33m²</p>
+              <div class=""><button type="button" class="btn btn-lg button-saiba-mais "><i class="bi bi-plus-circle text-white"></i> SAIBA MAIS</button></div>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="/static/imagens/web-banner-2-test.png" class="d-block w-100" alt="...">
+            <picture>
+              <source media="(max-width: 1024px)" srcset="/static/imagens/mobile-banner2.PNG" type="image/png">
+              <img src="/static/imagens/web-banner2.png" class="d-block w-100" alt="Imagem Banner Grand Paysage">
+            </picture>
+            
+            <div id="carrossel-2" class="carousel-caption d-md-block ">
+              <h1 class="h1-carrossel-2">LANÇAMENTO!</h1>
+              <h2 class="h2-carrossel-2">Loteamento fechado de alto padrão em Taubaté</h2>
+              <p class="sub-txt-carrossel-2">Terrenos de 250m² a 550m²</p>
+              <div class=""><button type="button" class="btn btn-lg button-saiba-mais "><i class="bi bi-plus-circle text-white"></i> SAIBA MAIS</button></div>
+            </div>
+            
           </div>
         </div>
       </div>
     </div>
   </main>
+
+<!-- Modal Full screen Menu
+<div class="modal fade" id="modalMenu" tabindex="-1" aria-labelledby="exampleModalFullscreenLabel"
+aria-modal="true" role="dialog">
+<div class="modal-dialog modal-fullscreen">
+  <div class="modal-content bg-menu bg-menu-right">
+    <div class="d-flex justify-content-end bg-menu-right p-5">
+      <button type="button" class="btn fechar-modal text-white" data-bs-dismiss="modal"
+        aria-label="Close">Fechar <i class="bi bi-x-lg"></i></button>
+    </div>
+    
+    <div class="container marketing">
+  
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2 bg-menu-right">
+          <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
+          <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+        </div>
+        <div class="col-md-5 order-md-1 bg-menu-left">
+          <H1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut eum aliquam modi vitae, soluta accusamus reprehenderit, architecto consequuntur quos necessitatibus odit rerum assumenda tempora tempore, quam sapiente velit quasi cupiditate.</H1>
+        </div>
+      </div>
+  
+    </div>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   <!-- Modal Full screen Pesquisar-->
