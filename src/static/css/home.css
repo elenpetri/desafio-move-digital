@@ -36,12 +36,22 @@
         visibility: collapse;
         display: none;
     }
+
+    .botao-header-desktop{
+        display: none !important;
+    }
+}
+
+@media (min-width: 1024px) {
+    .botao-header-mobile{
+        display: none !important;
+    }
 }
 
 /* ÁREA DE BUSCA */
 
 .bg-busca {
-    background-color: var(--blue);
+    background-color: var(--blue) !important;
 }
 
 .area-busca {
@@ -88,7 +98,36 @@
     background-color: var(--redhover);
 }
 
+.form-select{
+    color: #737380 !important;
+}
+
 /* CARROSSEL */
 .bg-btn-carrosel {
     background-color: black !important;
+}
+
+
+/* Modal Buscar Lançamentos (Mobile)*/
+
+.txt-area-busca-mobile {
+    padding: 1.5rem;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 40px;
+    color: var(--white);
+}
+
+.area-busca-mobile {
+    padding: auto;
+}
+
+#btn-area-busca-mobile{
+    width: 100%;
+    background-color: var(--red);
+    color: var(--white);
+    height: 40px;
+    border-radius: 3px;
+    font-weight: 600;
+    border: none;
 }
