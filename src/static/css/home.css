@@ -40,11 +40,75 @@
     .botao-header-desktop{
         display: none !important;
     }
+
+    .txt-carrossel-1{
+        font-size: 30px !important;
+        color: black;
+        width: 90%!important;
+    }
+    
+    .sub-txt-carrossel-1 {
+        font-weight: 16;
+        font-size: 16px;
+        color: var(--red);
+        width: 90%!important;
+    }
+
+    .carousel-caption{
+        position: relative!important;
+    }
+
+    .btn.button-saiba-mais{
+        background-color: var(--red);
+        color: var(--white);
+        border-radius: 3px;
+        border: none;
+        height: 48px;
+        width: 218px;
+        left: 1%;
+    }
+    
+    .btn.button-saiba-mais:hover{
+        background-color: black;
+        color: var(--white);
+        border: none;
+        
+    }
 }
 
 @media (min-width: 1024px) {
     .botao-header-mobile{
         display: none !important;
+    }
+
+    .txt-carrossel-1{
+        font-weight: 300;
+        font-size: 68px;
+        width: 25%!important;
+    }
+
+    .sub-txt-carrossel-1 {
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 48px;
+        color: var(--red);
+    }
+
+    .btn.button-saiba-mais{
+        background-color: var(--red);
+        color: var(--white);
+        border-radius: 3px;
+        border: none;
+        height: 48px;
+        width: 210px;
+        left: 1%;
+    }
+    
+    .btn.button-saiba-mais:hover{
+        background-color: black;
+        color: var(--white);
+        border: none;
+        
     }
 }
 
@@ -98,7 +162,7 @@
     background-color: var(--redhover);
 }
 
-.form-select{
+.form-select {
     color: #737380 !important;
 }
 
@@ -106,6 +170,18 @@
 .bg-btn-carrosel {
     background-color: black !important;
 }
+
+.carousel-caption.carousel-caption-1{
+    right: 0;
+    text-align: left;
+    left: 5%;
+    padding-bottom: 3rem;
+}
+
+
+
+
+
 
 
 /* Modal Buscar Lançamentos (Mobile)*/
