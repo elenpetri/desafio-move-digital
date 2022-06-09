@@ -15,6 +15,16 @@
     src: url('../fontes/GothamBold.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'GothamLight';
+    src: url('../fontes/GothamLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gotham-Thin';
+    src: url('../fontes/Gotham-Thin.otf') format('truetype');
+}
+
 /* HEADER */
 .bg-header {
     background-color: var(--red);
@@ -265,34 +275,57 @@
     color: white;
 }
 
-/*Fale com um corretor*/
-.card-title{
+/* Card Fale com um corretor*/
 
- 
-    
-    /* H1 - 68|72 */
-    
-    font-family: 'Montserrat';
+.bg-card-corretor {
+    background-color: #fefefe;
+}
+.card-title {  
+    /*Fale com um corretor*/
+    font-family: 'Gothambook';
     font-style: normal;
     font-weight: 300;
-    font-size: 68px;
-    line-height: 72px;
-    /* or 106% */
-    
-    
-    /* red */
-    
-    color: #DF1C24;
-    
-    
-    /* Inside auto layout */
-
+    font-size: 3.438rem; 
+    color: var(--red);
 }
 
+.card-txt{ 
+    /*Encontre um imóvel sob medida para sua necessidade e da sua família.*/
+    font-family: 'Gotham-Thin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #737380;
+}
+
+.btn-corretor{
+    /*Botão Falar com um corretor*/
+    height: 36px;
+    width: 266px;
+    left: 0px;
+    top: 0px;
+    border-radius: 3px;
+    font-size: 15px;
+    line-height: 24px;
+    border: none;
+    color: white;
+    background-color: var(--red);
+    box-shadow: inset 0 0 0 0 black;
+    transition: ease-out 0.3s;
+    outline: none;
+    font-family: 'Gothambook'
+}
+
+.btn-corretor:hover{
+    box-shadow: inset 400px 0 0 0 black;
+    color: white;
+}
 
 
 /* ============================*/
 /*RESPONSIVO Max-width*/
+/* ============================*/
 @media (max-width: 1024px) {
     .img-logo {
         width: 80%;
@@ -391,13 +424,34 @@
         top: 21.4rem;
     }
 
-    .btn-ver-tds-lancamentos{
+    .btn-ver-tds-lancamentos {
         width: 15.625rem;
         margin-left: 3.125rem;
         margin-right: 3.125rem;
         font-size: 16px;
         line-height: 16px;
     }
+
+    /* Card Fale com um corretor*/
+    .card-title {
+        /*Fale com um corretor*/
+        font-size: 2.625rem;
+        text-align: center;
+    }
+
+    .card-txt {
+        /*Encontre um imóvel sob medida para sua necessidade e da sua família.*/
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .container-btn-corretor {
+        /*Botão Falar com um corretor*/
+        align-items: center;
+        text-align: center;
+    }
+
+
 }
 
 /* ============================*/
@@ -454,8 +508,7 @@
         font-weight: 300;
         width: 25% !important;
         font-size: 60px;
-    }
-
+    }   
 }
 
 
