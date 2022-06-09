@@ -239,6 +239,32 @@
 }
 
 
+/*Botão Ver todos lançamentos*/
+.container-btn-tds-lancamentos{
+    align-items: center;
+    text-align: center;
+}
+
+
+.btn-ver-tds-lancamentos{
+    padding: 16px;
+    margin: 10px;
+    font-size: 24px;
+    line-height: 24px;
+    border: none;
+    color: white;
+    background-color: var(--red);
+    border-radius: 3px;
+    box-shadow: inset 0 0 0 0 black;
+    transition: ease-out 0.3s;
+    outline: none;
+}
+
+.btn-ver-tds-lancamentos:hover{
+    box-shadow: inset 400px 0 0 0 black;
+    color: white;
+}
+
 
 
 /* ============================*/
@@ -339,6 +365,14 @@
     #txt-tag-card {
         /*Posicionamento da Tag informativa das imagens (pré lançamento, pronto para morar ... no mobile*/
         top: 21.4rem;
+    }
+
+    .btn-ver-tds-lancamentos{
+        width: 15.625rem;
+        margin-left: 3.125rem;
+        margin-right: 3.125rem;
+        font-size: 16px;
+        line-height: 16px;
     }
 }
 
