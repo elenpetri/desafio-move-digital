@@ -341,7 +341,7 @@ body, html{
     background-color: var(--blue);
 }
 
-.text-footer, .text-footer ul li a{
+.text-footer, .text-footer ul li {
     color: white;
 }
 
@@ -363,21 +363,34 @@ body, html{
     
 }
 
-.bg-menu-left{
+.bg-menu-left {
     background-color: var(--blue);
-    filter: opacity(50%);
+    filter: opacity(90%);
 }
 
-.bg-menu-right{
+.bg-menu-right {
     background-color: var(--red);
-    filter: opacity(50%);
+    filter: opacity(90%);
 }
 
-.menu{
+.menu {
   height: 100%;
  }
 
+ .modal-dialog.modal-fullscreen.w-auto {
+    width: auto !important;
+ }
 
+.text-menu-right ul li {
+    font-size: 28px;
+    font-family: 'GothamBook';
+    color: var(--white);
+}
+
+.text-menu-left,.text-menu-left ul li {
+    font-size: 16px;
+    color: var(--white);
+}
 
 
 /* ============================*/
@@ -575,6 +588,10 @@ body, html{
 @media screen and (max-width: 767px){
     .bg-menu{
         background-image: url(/static/imagens/bg-menu-p.png);
+    }
+
+    .min-h{
+        min-height: 50vh;
     }
 }
 
