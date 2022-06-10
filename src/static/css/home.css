@@ -579,6 +579,10 @@ body, html{
         width: 25% !important;
         font-size: 60px;
     }   
+
+    .logo-menu-fullscreen-mobile {
+        display: none;
+    }
 }
 
 /*=================================================================================================================*/
@@ -592,6 +596,11 @@ body, html{
 
     .min-h{
         min-height: 50vh;
+    }
+
+
+    .logo-menu-fullscreen-desktop{
+        display: none !important;
     }
 }
 
