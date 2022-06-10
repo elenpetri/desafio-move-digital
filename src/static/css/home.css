@@ -30,6 +30,10 @@
     src: url('../fontes/Gotham-XLight.otf') format('truetype');
 }
 
+body, html{
+    height: 100%;
+}
+
 /* HEADER */
 .bg-header {
     background-color: var(--red);
@@ -351,6 +355,30 @@
     background-color: #271F6C;
 }
 
+/*Modal Menu*/
+.bg-menu{
+    background-image: url(/static/imagens/bg-menu-g.png);
+    background-repeat: no-repeat; 
+    background-size: 100%;
+    
+}
+
+.bg-menu-left{
+    background-color: var(--blue);
+    filter: opacity(50%);
+}
+
+.bg-menu-right{
+    background-color: var(--red);
+    filter: opacity(50%);
+}
+
+.menu{
+  height: 100%;
+ }
+
+
+
 
 /* ============================*/
 /*RESPONSIVO Max-width*/
@@ -537,6 +565,23 @@
         font-weight: 300;
         width: 25% !important;
         font-size: 60px;
+    }   
+}
+
+/*=================================================================================================================*/
+/*==============================================TAMANHOS RESPONSIVOS===============================================*/
+/*=================================================================================================================*/
+
+@media screen and (max-width: 767px){
+    .bg-menu{
+        background-image: url(/static/imagens/bg-menu-p.png);
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .bg-menu{
+        background-image: url(/static/imagens/bg-menu-m.png);
     }   
 }
 
