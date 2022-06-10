@@ -25,6 +25,11 @@
     src: url('../fontes/Gotham-Thin.otf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Gotham-XLight';
+    src: url('../fontes/Gotham-XLight.otf') format('truetype');
+}
+
 /* HEADER */
 .bg-header {
     background-color: var(--red);
@@ -334,6 +339,10 @@
 
 .text-footer, .text-footer ul li a{
     color: white;
+}
+
+.font-family-footer{
+    font-family: 'GothamBook';
 }
 
 .bg-info-footer{
