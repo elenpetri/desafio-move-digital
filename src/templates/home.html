@@ -24,7 +24,7 @@
       <img class="img-logo" src="/static/imagens/logo.PNG" alt="Logo Franco Consultoria de Imóveis">
     </a>
 
-    <div class="col-md-3 text-end pe-lg-5 botao-header">
+    <div class="text-end pe-lg-5 botao-header">
       <button type="button" class="btn me-2 botao-header botao-header-desktop " type="button" data-bs-toggle="collapse"
         data-bs-target="#collapseMenu" aria-expanded="false" aria-controls="collapseMenu" id><span
           class="txt-botao-header">Buscar Lançamentos</span> <i class="bi bi-search cor-icone"></i>
@@ -145,7 +145,7 @@
     <div class="album py-5 ">
       <div class="container">
   
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 ">
           <div class="col">
             <div class="card card-style blackout-card">
               <img src="/static/imagens/album-img1.png" alt="Imagem de Imóvel">
@@ -313,7 +313,7 @@
       <div class="container mb-3 ">
         <div class="row g-0 flex-column-reverse flex-sm-row bg-card-corretor">
 
-          <div class=" col-md-3 offset-md-2 d-flex flex-column justify-content-center">
+          <div class=" col-md-4 col-sm-5 offset-md-2 d-flex flex-column justify-content-center">
             <h5 class="card-title">Fale com um corretor</h5>
             <p class="card-txt pt-3">Encontre um imóvel sob medida para sua necessidade e da sua família.</p>
 
@@ -322,7 +322,7 @@
             </div>
           </div>
 
-          <div class="col-md-6 col-sm-1 text-center">
+          <div class="col-md-6 col-sm-6 text-center">
             <img src="/static/imagens/img-corretor.png" class="img-fluid rounded" alt="...">
           </div>
         </div>
@@ -331,35 +331,106 @@
 
   <!--Footer-->
   <div class="line-footer"></div>
-    <footer class="py-1 bg-footer">
+  <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 m-0 pt-5 mb-0 bg-footer ">
+    
+
+    <div class="col offset-md-1 mb-3 text-center text-md-start">
+      <img src="/static/imagens/logo-branco-sm.png" alt="...">
+    </div>
+
+    <div class="col mb-3 text-footer">
+
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><i class="bi bi-house-door"></i> Home</li>
+            <li class="nav-item mb-2"><i class="bi bi-award"></i> Quem é a Franco</li>
+            <li class="nav-item mb-2"><i class="bi bi-search"></i> Buscar Lançamentos</li>
+            <li class="nav-item mb-2"><i class="bi bi-file-earmark-text"></i> Blog</li>
+            <li class="nav-item mb-2"><i class="bi bi-telephone"></i> Contato</li>
+            <li class="nav-item mb-2"><i class="bi bi-shield-check"></i> Políticas</li>
+      </ul>
+    </div>
+
+    <div class="col mb-3 text-footer">
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><i class="bi bi-geo-alt"></i> Rua Ubatuba, 154 Jardim das Nações - Taubaté/SP</li>
+            <li class="nav-item mb-2"><i class="bi bi-envelope"></i> contato@francoimoveis.net</li>
+            <li class="nav-item mb-2"><i class="bi bi-whatsapp"></i> (12) 99622-9463 / 3633-8556</li>
+      </ul>
+    </div>
+
+    <div class="col mb-3 text-footer">
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2">Home</li>
+        <li class="nav-item mb-2">Features</li>
+        <li class="nav-item mb-2">Pricing</li>
+        <li class="nav-item mb-2">FAQs</li>
+        <li class="nav-item mb-2">About</li>
+      </ul>
+    </div>
+
+    <div class="row w-100 flex-column flex-sm-row m-0 text-center align-items-center pt-3 bg-info-footer">
+      <div class="col">
+        <p class="text-white">© 2022 - Franco Imobiliária. Todos os Direitos Reservados</p>
+      </div>
+      <div class="col">
+        <p class="text-white">Desenvolvido por <b>Move Digital</b></p>
+      </div>
+    </div>
+
+
+
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--<footer class="py-1 bg-footer">
       <div class="row pt-5">
-        <div class="col-md-2 offset-md-1 mb-3">
+        <div class="col-md-3 offset-md-1 mb-3">
           <img src="/static/imagens/logo-branco-sm.png" alt="...">
         </div>
 
         <div class="col-6 col-md-3 mb-3 text-footer">
-          <h5>Section</h5>
           <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Home</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Features</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Pricing</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">FAQs</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">About</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0"> <i class="bi bi-house-door"></i> Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0"> <i class="bi bi-award"></i> Quem é a Franco</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0"> <i class="bi bi-search"></i> Buscar Lançamentos</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0"> <i class="bi bi-file-earmark-text"></i> Blog</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0"> <i class="bi bi-telephone"></i> Contato</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0"> <i class="bi bi-shield-check"></i> Políticas</a></li>
           </ul>
         </div>
         
         <div class="col-6 col-md-3 mb-3 text-footer">
           <h5>Section</h5>
           <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Home</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Features</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Pricing</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">FAQs</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">About</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0"> <i class="bi bi-geo-alt"></i> Rua Ubatuba, 154 Jardim das Nações - Taubaté/SP</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0"> <i class="bi bi-envelope"></i> contato@francoimoveis.net</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">  <i class="bi bi-whatsapp"></i> (12) 99622-9463 / 3633-8556</a></li>
           </ul>
         </div>
   
-        <div class="col-6 col-md-3 mb-3 text-footer">
+        <div class="col-6 col-md-2 mb-3 text-footer">
           <h5>Section</h5>
           <ul class="nav flex-column">
             <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Home</a></li>
@@ -381,7 +452,7 @@
           <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
         </ul>
       </div>
-    </footer>
+    </footer>-->
 
 <!-- Modal Full screen Menu
 <div class="modal fade" id="modalMenu" tabindex="-1" aria-labelledby="exampleModalFullscreenLabel"

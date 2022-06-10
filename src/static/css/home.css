@@ -332,8 +332,14 @@
     background-color: var(--blue);
 }
 
-.text-footer, .text-footer h5, .text-footer ul li a{
+.text-footer, .text-footer ul li a{
     color: white;
+}
+
+.bg-info-footer{
+    /* © 2022 - Franco Imobiliária. Todos os Direitos Reservados. */
+    /* Desenvolvido por Move Digital */
+    background-color: #271F6C;
 }
 
 
