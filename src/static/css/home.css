@@ -173,7 +173,7 @@ body, html{
     border: none;
 }
 
-/*Conteúdo album*/
+/*Conteúdo album/catálogo */
 
 .card.card-style {
     border-width: 0;
@@ -395,10 +395,225 @@ body, html{
     color: var(--white);
 }
 
+/*=================================================================================================================*/
+/*==============================================TAMANHOS RESPONSIVOS===============================================*/
+/*=================================================================================================================*/
 
-/* ============================*/
-/*RESPONSIVO Max-width*/
-/* ============================*/
+@media (max-width: 767px) {
+    #carouselExampleIndicators>div.carousel-inner>div.carousel-item.active>div>h1{
+        /* Texto carrossel "Novo conceito de inteligência desbloqueado"*/
+        font-size: 32px;
+    }
+
+    div.carousel-caption {
+        padding-bottom: 1rem;
+        bottom: 17rem;
+    }
+
+    .bg-menu {
+        background-image: url(/static/imagens/bg-menu-p.png);
+    }
+
+    .min-h {
+        min-height: 50vh;
+    }
+
+    .logo-menu-fullscreen-desktop {
+        display: none !important;
+    }
+
+    #carrossel-2 {
+        /*Todo conteudo da div incluindo h1, h2, button, etc*/
+        padding-bottom: 2rem;
+    }
+
+    .sub-txt-carrossel-2{
+        margin-bottom: 4px;
+    }
+  /*Conteúdo album/catálogo */
+    
+  .txt-tag-card{ 
+    /*novo estilo tag que funciona mac*/
+    bottom: 36px;
+    color: black;
+    background: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    font-family: 'GothamBold';
+    line-height: 1.58;
+    padding: 5px 10px;
+    margin-bottom: -15px;
+    width: fit-content;
+    font-family: 'GothamBold';
+}
+    /*Conteúdo album/catálogo */
+
+    .txt-tag-card{ 
+    /*novo estilo tag que funciona mac*/
+    bottom: 36px;
+    color: black;
+    background: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    font-family: 'GothamBold';
+    line-height: 1.58;
+    padding: 5px 10px;
+    margin-bottom: -15px;
+    width: fit-content;
+    font-family: 'GothamBold';
+}
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+    #carouselExampleIndicators>div.carousel-inner>div.carousel-item.active>div>h1{
+            /* Texto carrossel "Novo conceito de inteligência desbloqueado"*/
+        font-size: 24px;
+    }
+    
+    div.carousel-caption {
+        padding-bottom: 1rem;
+        bottom: 12rem; 
+    }
+
+    .bg-menu {
+        background-image: url(/static/imagens/bg-menu-m.png);
+    }   
+
+    div.carousel-caption {
+        bottom: 13rem;
+    }
+
+    .sub-txt-carrossel-1 {
+        /*Apartamentos de 63,33m²*/
+        font-size: 12px;
+    }
+
+    .btn.button-saiba-mais {
+        font-size: 0.75rem;
+    }
+
+    #carouselExampleIndicators>div.carousel-indicators.justify-content-start {
+        /*Posicionamento dos indincadores do carrossel*/
+        bottom: 185px;
+    }
+
+    /*Carrossel 2*/
+
+    div.carousel-caption.carousel-caption-2 {
+        bottom: 11rem;
+        left: 8% !important;
+    }
+
+    .h2-carrossel-2 {
+        /*Loteamento fechado de alto padrão em Taubaté!*/
+        font-size: 19px;
+        padding-top: 0rem;
+        margin-bottom: 0;
+    }
+    
+    #carrossel-2 {
+        padding-bottom: 3.25rem;
+    }
+
+    .sub-txt-carrossel-2{
+        margin-bottom: 0;
+    }
+
+    /*Conteúdo album/catálogo */
+    
+    .txt-tag-card{ 
+        /*novo estilo tag que funciona mac*/
+        bottom: 36px;
+        color: black;
+        background: rgba(255, 255, 255, 0.6);
+        font-size: 14px;
+        font-family: 'GothamBold';
+        line-height: 1.58;
+        padding: 5px 10px;
+        margin-bottom: -15px;
+        width: fit-content;
+        font-family: 'GothamBold';
+    }
+
+    .h1-txt-card {
+        /*Duomo Residencial*/
+        font-size: 28px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .botao-header-mobile {
+        /*esconde botão de Buscar lançamentos para exibir o botão em modo desktop*/
+        display: none !important;
+    }
+    div h1.txt-carrossel-1 {
+        /*Novo conceito de inteligência desbloqueado.*/
+        font-weight: 300;
+        width: 25%;
+        font-size: 60px;
+
+    }
+
+    .sub-txt-carrossel-1 {
+        /*Apartamentos de 63,33m²*/
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 48px;
+        color: var(--red);
+    }
+
+    .btn.button-saiba-mais {
+        background-color: var(--red);
+        color: var(--white);
+        border-radius: 3px;
+        border: none;
+        height: 48px;
+        width: 210px;
+        left: 1%;
+        font-size: 1.25rem;
+        font-family: 'Gothambook';
+    }
+
+    .btn.button-saiba-mais:hover {
+        background-color: black;
+        color: var(--white);
+        border: none;
+    }
+
+    .carousel-caption.carousel-caption-1 {
+        right: 0;
+        left: 5%;
+        padding-bottom: 3rem;
+    }
+
+    .carousel-caption {
+        left: 5%;
+    }
+
+    .h1-carrossel-2 {
+        /*Lançamento!*/
+        font-weight: 300;
+        width: 25% !important;
+        font-size: 60px;
+    }   
+
+    .logo-menu-fullscreen-mobile {
+        display: none;
+    }
+
+    .txt-tag-card{ /*novo estilo tag que funciona mac*/
+        bottom: 36px;
+        color: black;
+        background: rgba(255, 255, 255, 0.6);
+        font-size: 14px;
+        font-family: 'GothamBold';
+        line-height: 1.58;
+        padding: 5px 10px;
+        margin-bottom: -15px;
+        width: fit-content;
+        font-family: 'GothamBold';
+    }
+}
+
 @media (max-width: 1024px) {
     .img-logo {
         width: 80%;
@@ -525,209 +740,6 @@ body, html{
         text-align: center;
     }
 
-    .google{
-
-        bottom: 199px;
-        color: black;
-        background: rgba(255, 255, 255, 0.6);
-        font-size: 14px;
-        line-height: 1.58;
-        padding: 5px 10px;
-        position: absolute;
-}
-
-}
-
-/* ============================*/
-/*RESPONSIVO Min-width*/
-
-/*=================================================================================================================*/
-/*==============================================TAMANHOS RESPONSIVOS===============================================*/
-/*=================================================================================================================*/
-
-@media (max-width: 767px) {
-    #carouselExampleIndicators>div.carousel-inner>div.carousel-item.active>div>h1{
-        /* Texto carrossel "Novo conceito de inteligência desbloqueado"*/
-        font-size: 32px;
-    }
-
-    div.carousel-caption {
-        padding-bottom: 1rem;
-        bottom: 17rem;
-    }
-
-    .bg-menu {
-        background-image: url(/static/imagens/bg-menu-p.png);
-    }
-
-    .min-h {
-        min-height: 50vh;
-    }
-
-    .logo-menu-fullscreen-desktop {
-        display: none !important;
-    }
-
-    #carrossel-2 {
-        /*Todo conteudo da div incluindo h1, h2, button, etc*/
-        padding-bottom: 2rem;
-    }
-
-    .sub-txt-carrossel-2{
-        margin-bottom: 4px;
-    }
-
-    .google{
-        bottom: 224px;
-        color: black;
-        background: rgba(255, 255, 255, 0.6);
-        font-size: 14px;
-        line-height: 1.58;
-        padding: 5px 10px;
-        position: absolute;
-    }
-}
-    
-
-
-@media (min-width: 768px) and (max-width: 1023px){
-    #carouselExampleIndicators>div.carousel-inner>div.carousel-item.active>div>h1{
-            /* Texto carrossel "Novo conceito de inteligência desbloqueado"*/
-        font-size: 24px;
-    }
-    
-    div.carousel-caption {
-        padding-bottom: 1rem;
-        bottom: 12rem; 
-    }
-
-    .bg-menu {
-        background-image: url(/static/imagens/bg-menu-m.png);
-    }   
-
-    div.carousel-caption {
-        bottom: 13rem;
-    }
-
-    .sub-txt-carrossel-1 {
-        /*Apartamentos de 63,33m²*/
-        font-size: 12px;
-    }
-
-    .btn.button-saiba-mais {
-        font-size: 0.75rem;
-    }
-
-    #carouselExampleIndicators>div.carousel-indicators.justify-content-start {
-        /*Posicionamento dos indincadores do carrossel*/
-        bottom: 185px;
-    }
-
-    /*Carrossel 2*/
-
-    div.carousel-caption.carousel-caption-2 {
-        bottom: 11rem;
-        left: 8% !important;
-    }
-
-    .h2-carrossel-2 {
-        /*Loteamento fechado de alto padrão em Taubaté!*/
-        font-size: 19px;
-        padding-top: 0rem;
-        margin-bottom: 0;
-    }
-    
-    #carrossel-2 {
-        padding-bottom: 3.25rem;
-    }
-
-    .sub-txt-carrossel-2{
-        margin-bottom: 0;
-    }
-    
-    .google{
-        bottom: 310px;
-        color: black;
-        background: rgba(255, 255, 255, 0.6);
-        font-size: 14px;
-        line-height: 1.58;
-        padding: 5px 10px;
-        position: absolute;
-    }
-}
-
-@media (min-width: 1024px) {
-    .botao-header-mobile {
-        /*esconde botão de Buscar lançamentos para exibir o botão em modo desktop*/
-        display: none !important;
-    }
-    div h1.txt-carrossel-1 {
-        /*Novo conceito de inteligência desbloqueado.*/
-        font-weight: 300;
-        width: 25%;
-        font-size: 60px;
-
-    }
-
-    .sub-txt-carrossel-1 {
-        /*Apartamentos de 63,33m²*/
-        font-weight: 400;
-        font-size: 26px;
-        line-height: 48px;
-        color: var(--red);
-    }
-
-    .btn.button-saiba-mais {
-        background-color: var(--red);
-        color: var(--white);
-        border-radius: 3px;
-        border: none;
-        height: 48px;
-        width: 210px;
-        left: 1%;
-        font-size: 1.25rem;
-        font-family: 'Gothambook';
-    }
-
-    .btn.button-saiba-mais:hover {
-        background-color: black;
-        color: var(--white);
-        border: none;
-    }
-
-    .carousel-caption.carousel-caption-1 {
-        right: 0;
-        left: 5%;
-        padding-bottom: 3rem;
-    }
-
-    .carousel-caption {
-        left: 5%;
-    }
-
-    .h1-carrossel-2 {
-        /*Lançamento!*/
-        font-weight: 300;
-        width: 25% !important;
-        font-size: 60px;
-    }   
-
-    .logo-menu-fullscreen-mobile {
-        display: none;
-    }
-
-    .txt-tag-card{ /*novo etilo tag que funciona mac*/
-        bottom: 36px;
-        color: black;
-        background: rgba(255, 255, 255, 0.6);
-        font-size: 14px;
-        font-family: 'GothamBold';
-        line-height: 1.58;
-        padding: 5px 10px;
-        margin-bottom: -15px;
-        width: fit-content;
-        font-family: 'GothamBold';
-    }
 }
 
 
