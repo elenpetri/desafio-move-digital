@@ -571,7 +571,7 @@ body, html{
     }   
 
     div.carousel-caption {
-        bottom: 12rem;
+        bottom: 13rem;
     }
 
     .sub-txt-carrossel-1 {
@@ -585,7 +585,7 @@ body, html{
 
     #carouselExampleIndicators>div.carousel-indicators.justify-content-start {
         /*Posicionamento dos indincadores do carrossel*/
-        bottom: 165px;
+        bottom: 185px;
     }
     
 }
