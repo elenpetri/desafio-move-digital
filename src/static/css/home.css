@@ -398,6 +398,133 @@ body, html{
 /*=================================================================================================================*/
 /*==============================================TAMANHOS RESPONSIVOS===============================================*/
 /*=================================================================================================================*/
+@media (max-width: 1024px) {
+    .img-logo {
+        width: 80%;
+    }
+
+    .txt-botao-header {
+        /*inferior a 1024px esconde os textos dos botões do header que aparecem para desktop*/
+        visibility: visible;
+        visibility: hidden;
+        visibility: collapse;
+        display: none;
+    }
+
+    .botao-header-desktop {
+        /*esconde botão de Buscar lançamentos para exibir o botão em modo mobile*/
+        display: none !important;
+    }
+
+    #carouselExampleIndicators>div.carousel-inner>div.carousel-item.active>div>h1 {
+        font-size: 35px;
+        width: 95%;
+    }
+
+    .txt-carrossel-1 {
+        /*Novo conceito de inteligência desbloqueado.*/
+        color: var(--white);
+        font-weight: 300;
+    }
+
+    .sub-txt-carrossel-1 {
+        /*Apartamentos de 63,33m²*/
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--red);
+        width: 90% !important;
+    }
+
+    .carousel-caption {
+        position: relative !important;
+        left: 5% !important;
+    }
+
+    #carouselExampleIndicators>div.carousel-inner>div.carousel-item.active>div>div {
+        width: 205px;
+    }
+
+    #carouselExampleIndicators>div.carousel-inner>div.carousel-item.active>div>div {
+        padding-top: 0.5rem;
+    }
+
+    #carouselExampleIndicators>div.carousel-inner>div.carousel-item.active>div>div>button {
+        color: var(--white);
+        background-color: var(--red);
+        border-radius: 3px;
+        border: none;
+    }
+
+    #carouselExampleIndicators>div.carousel-inner>div.carousel-item.active>div>div>button:hover {
+        background-color: black;
+        color: var(--white);
+        border: none;
+    }
+
+    #carouselExampleIndicators>div.carousel-indicators.justify-content-start {
+        bottom: 250px;
+        color: var(--white);
+        margin-left: 50px;
+    }
+
+    .carousel-indicators.justify-content-start {
+        margin-left: 6rem;
+    }
+
+    .h2-carrossel-2 {
+        /*Loteamento fechado de alto padrão em Taubaté!*/
+        color: black;
+        font-size: 32px;
+        margin-bottom: 0;
+    }
+
+    .h2-carrossel-2 {
+        /*Loteamento fechado de alto padrão em Taubaté!*/
+        font-size: 20px;
+        font-weight: 600;
+        width: 332px;
+    }
+
+    .sub-txt-carrossel-2 {
+        /*Terrenos de 250m² a 550m*/
+        font-size: 20px;
+        font-weight: 300;
+        margin-bottom: 0;
+    }
+
+    #txt-tag-card {
+        /*Posicionamento da Tag informativa das imagens (pré lançamento, pronto para morar ... no mobile*/
+        top: 21.4rem;
+    }
+
+    .btn-ver-tds-lancamentos {
+        width: 15.625rem;
+        margin-left: 3.125rem;
+        margin-right: 3.125rem;
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    /* Card Fale com um corretor*/
+    .card-title {
+        /*Fale com um corretor*/
+        font-size: 2.625rem;
+        text-align: center;
+    }
+
+    .card-txt {
+        /*Encontre um imóvel sob medida para sua necessidade e da sua família.*/
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .container-btn-corretor {
+        /*Botão Falar com um corretor*/
+        align-items: center;
+        text-align: center;
+    }
+
+}
 
 @media (max-width: 767px) {
     #carouselExampleIndicators>div.carousel-inner>div.carousel-item.active>div>h1{
@@ -536,7 +663,7 @@ body, html{
 
     .h1-txt-card {
         /*Duomo Residencial*/
-        font-size: 28px;
+        font-size: 22px;
     }
 }
 
@@ -614,133 +741,6 @@ body, html{
     }
 }
 
-@media (max-width: 1024px) {
-    .img-logo {
-        width: 80%;
-    }
-
-    .txt-botao-header {
-        /*inferior a 1024px esconde os textos dos botões do header que aparecem para desktop*/
-        visibility: visible;
-        visibility: hidden;
-        visibility: collapse;
-        display: none;
-    }
-
-    .botao-header-desktop {
-        /*esconde botão de Buscar lançamentos para exibir o botão em modo mobile*/
-        display: none !important;
-    }
-
-    #carouselExampleIndicators>div.carousel-inner>div.carousel-item.active>div>h1 {
-        font-size: 35px;
-        width: 95%;
-    }
-
-    .txt-carrossel-1 {
-        /*Novo conceito de inteligência desbloqueado.*/
-        color: var(--white);
-        font-weight: 300;
-    }
-
-    .sub-txt-carrossel-1 {
-        /*Apartamentos de 63,33m²*/
-        font-size: 20px;
-        font-weight: 600;
-        color: var(--red);
-        width: 90% !important;
-    }
-
-    .carousel-caption {
-        position: relative !important;
-        left: 5% !important;
-    }
-
-    #carouselExampleIndicators>div.carousel-inner>div.carousel-item.active>div>div {
-        width: 205px;
-    }
-
-    #carouselExampleIndicators>div.carousel-inner>div.carousel-item.active>div>div {
-        padding-top: 0.5rem;
-    }
-
-    #carouselExampleIndicators>div.carousel-inner>div.carousel-item.active>div>div>button {
-        color: var(--white);
-        background-color: var(--red);
-        border-radius: 3px;
-        border: none;
-    }
-
-    #carouselExampleIndicators>div.carousel-inner>div.carousel-item.active>div>div>button:hover {
-        background-color: black;
-        color: var(--white);
-        border: none;
-    }
-
-    #carouselExampleIndicators>div.carousel-indicators.justify-content-start {
-        bottom: 250px;
-        color: var(--white);
-        margin-left: 50px;
-    }
-
-    .carousel-indicators.justify-content-start {
-        margin-left: 6rem;
-    }
-
-    .h2-carrossel-2 {
-        /*Loteamento fechado de alto padrão em Taubaté!*/
-        color: black;
-        font-size: 32px;
-        margin-bottom: 0;
-    }
-
-    .h2-carrossel-2 {
-        /*Loteamento fechado de alto padrão em Taubaté!*/
-        font-size: 20px;
-        font-weight: 600;
-        width: 332px;
-    }
-
-    .sub-txt-carrossel-2 {
-        /*Terrenos de 250m² a 550m*/
-        font-size: 20px;
-        font-weight: 300;
-        margin-bottom: 0;
-    }
-
-    #txt-tag-card {
-        /*Posicionamento da Tag informativa das imagens (pré lançamento, pronto para morar ... no mobile*/
-        top: 21.4rem;
-    }
-
-    .btn-ver-tds-lancamentos {
-        width: 15.625rem;
-        margin-left: 3.125rem;
-        margin-right: 3.125rem;
-        font-size: 16px;
-        line-height: 16px;
-    }
-
-    /* Card Fale com um corretor*/
-    .card-title {
-        /*Fale com um corretor*/
-        font-size: 2.625rem;
-        text-align: center;
-    }
-
-    .card-txt {
-        /*Encontre um imóvel sob medida para sua necessidade e da sua família.*/
-        text-align: center;
-        font-size: 20px;
-    }
-
-    .container-btn-corretor {
-        /*Botão Falar com um corretor*/
-        align-items: center;
-        text-align: center;
-    }
-
-}
 
 
 
