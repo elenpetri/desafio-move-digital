@@ -126,7 +126,8 @@ body, html{
 #carrossel-2 {
     /*Todo conteudo da div incluindo h1, h2, button, etc*/
     text-align: start;
-    left: 6%;
+    left: 8%;
+    padding-bottom: 5.25rem;
 }
 
 .h1-carrossel-2 {
@@ -473,6 +474,7 @@ body, html{
         /*Loteamento fechado de alto padrão em Taubaté!*/
         color: black;
         font-size: 32px;
+        margin-bottom: 0;
     }
 
     .h2-carrossel-2 {
@@ -486,6 +488,7 @@ body, html{
         /*Terrenos de 250m² a 550m*/
         font-size: 20px;
         font-weight: 300;
+        margin-bottom: 0;
     }
 
     #txt-tag-card {
@@ -538,7 +541,6 @@ body, html{
 
     div.carousel-caption {
         padding-bottom: 1rem;
-        padding-top: 0rem;
         bottom: 17rem;
     }
 
@@ -553,6 +555,16 @@ body, html{
     .logo-menu-fullscreen-desktop {
         display: none !important;
     }
+
+    #carrossel-2 {
+        /*Todo conteudo da div incluindo h1, h2, button, etc*/
+        padding-bottom: 2rem;
+    }
+
+    .sub-txt-carrossel-2{
+        margin-bottom: 4px;
+    }
+    
 }
 
 @media (min-width: 768px) and (max-width: 1023px){
@@ -586,6 +598,28 @@ body, html{
     #carouselExampleIndicators>div.carousel-indicators.justify-content-start {
         /*Posicionamento dos indincadores do carrossel*/
         bottom: 185px;
+    }
+
+    /*Carrossel 2*/
+
+    div.carousel-caption.carousel-caption-2 {
+        bottom: 11rem;
+        left: 8% !important;
+    }
+
+    .h2-carrossel-2 {
+        /*Loteamento fechado de alto padrão em Taubaté!*/
+        font-size: 19px;
+        padding-top: 0rem;
+        margin-bottom: 0;
+    }
+    
+    #carrossel-2 {
+        padding-bottom: 3.25rem;
+    }
+
+    .sub-txt-carrossel-2{
+        margin-bottom: 0;
     }
     
 }
