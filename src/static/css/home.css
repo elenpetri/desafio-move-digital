@@ -435,7 +435,6 @@ body, html{
 
     .carousel-caption {
         position: relative !important;
-        bottom: 17rem !important;
         left: 5% !important;
     }
 
@@ -531,25 +530,64 @@ body, html{
 /*==============================================TAMANHOS RESPONSIVOS===============================================*/
 /*=================================================================================================================*/
 
-@media (max-width: 767px){
-    .bg-menu{
+@media (max-width: 767px) {
+    #carouselExampleIndicators>div.carousel-inner>div.carousel-item.active>div>h1{
+        /* Texto carrossel "Novo conceito de inteligência desbloqueado"*/
+        font-size: 32px;
+    }
+
+    div.carousel-caption {
+        padding-bottom: 1rem;
+        padding-top: 0rem;
+        bottom: 17rem;
+    }
+
+    .bg-menu {
         background-image: url(/static/imagens/bg-menu-p.png);
     }
 
-    .min-h{
+    .min-h {
         min-height: 50vh;
     }
 
-
-    .logo-menu-fullscreen-desktop{
+    .logo-menu-fullscreen-desktop {
         display: none !important;
     }
 }
 
 @media (min-width: 768px) and (max-width: 1023px){
-    .bg-menu{
+    #carouselExampleIndicators>div.carousel-inner>div.carousel-item.active>div>h1{
+            /* Texto carrossel "Novo conceito de inteligência desbloqueado"*/
+        font-size: 24px;
+    }
+    
+    div.carousel-caption {
+        padding-bottom: 1rem;
+        bottom: 12rem; 
+    }
+
+    .bg-menu {
         background-image: url(/static/imagens/bg-menu-m.png);
     }   
+
+    div.carousel-caption {
+        bottom: 12rem;
+    }
+
+    .sub-txt-carrossel-1 {
+        /*Apartamentos de 63,33m²*/
+        font-size: 12px;
+    }
+
+    .btn.button-saiba-mais {
+        font-size: 0.75rem;
+    }
+
+    #carouselExampleIndicators>div.carousel-indicators.justify-content-start {
+        /*Posicionamento dos indincadores do carrossel*/
+        bottom: 165px;
+    }
+    
 }
 
 @media (min-width: 1024px) {
@@ -557,12 +595,12 @@ body, html{
         /*esconde botão de Buscar lançamentos para exibir o botão em modo desktop*/
         display: none !important;
     }
-
-    .txt-carrossel-1 {
+    div h1.txt-carrossel-1 {
         /*Novo conceito de inteligência desbloqueado.*/
         font-weight: 300;
-        width: 25% !important;
+        width: 25%;
         font-size: 60px;
+
     }
 
     .sub-txt-carrossel-1 {
@@ -581,6 +619,8 @@ body, html{
         height: 48px;
         width: 210px;
         left: 1%;
+        font-size: 1.25rem;
+        font-family: 'Gothambook';
     }
 
     .btn.button-saiba-mais:hover {
