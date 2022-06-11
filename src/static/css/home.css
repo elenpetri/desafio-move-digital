@@ -360,7 +360,6 @@ body, html{
 
 /*Modal Menu*/
 .bg-menu{
-    background-image: url(/static/imagens/bg-menu-g.png);
     background-repeat: no-repeat; 
     background-size: 100%;
     
@@ -392,6 +391,7 @@ body, html{
 
 .text-menu-left,.text-menu-left ul li {
     font-size: 16px;
+    font-family: 'GothamBook';
     color: var(--white);
 }
 
@@ -602,7 +602,8 @@ body, html{
     }
 
     .bg-menu {
-        background-image: url(/static/imagens/bg-menu-m.png);
+        background-image: url(/static/imagens/bg-menu-m2.png);
+        width: 100%;
     }   
 
     div.carousel-caption {
@@ -721,7 +722,13 @@ body, html{
         font-weight: 300;
         width: 25% !important;
         font-size: 60px;
-    }   
+    }
+    
+    /*Modal Menu*/
+    .bg-menu {
+        background-image: url(/static/imagens/bg-menu-g.png);
+    }
+
 
     .logo-menu-fullscreen-mobile {
         display: none;
@@ -739,6 +746,33 @@ body, html{
         width: fit-content;
         font-family: 'GothamBold';
     }
+
+
+    /*================modal menu novo==================*/
+    .body-modal-menu {
+        background-image: url(/static/imagens/bg-menu-g.png);
+    }
+
+    .menu-left{
+        background-color: var(--blue);
+        width: 25%;
+        filter: opacity(90%);
+    }
+
+    .menu-right{
+        background-color: var(--red);
+        width: 75%;
+        filter: opacity(90%);
+    }
+
+}
+
+
+/*================modal menu novo geral==================*/
+.body-modal-menu{
+    background-repeat: no-repeat; 
+    background-size: 100%;
+    
 }
 
 
