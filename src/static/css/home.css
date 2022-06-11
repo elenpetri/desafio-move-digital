@@ -66,7 +66,7 @@ body, html{
 }
 
 .area-busca {
-    padding: 21px 60px 21px 60px;
+    padding: 21px 0 21px 0;
 }
 
 .txt-area-busca {
@@ -526,9 +526,35 @@ body, html{
 
 /* ============================*/
 /*RESPONSIVO Min-width*/
+
+/*=================================================================================================================*/
+/*==============================================TAMANHOS RESPONSIVOS===============================================*/
+/*=================================================================================================================*/
+
+@media (max-width: 767px){
+    .bg-menu{
+        background-image: url(/static/imagens/bg-menu-p.png);
+    }
+
+    .min-h{
+        min-height: 50vh;
+    }
+
+
+    .logo-menu-fullscreen-desktop{
+        display: none !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+    .bg-menu{
+        background-image: url(/static/imagens/bg-menu-m.png);
+    }   
+}
+
 @media (min-width: 1024px) {
     .botao-header-mobile {
-        /*esconde botão de Buscar lançamentos para exibir o botão em modo mobile*/
+        /*esconde botão de Buscar lançamentos para exibir o botão em modo desktop*/
         display: none !important;
     }
 
@@ -584,52 +610,3 @@ body, html{
         display: none;
     }
 }
-
-/*=================================================================================================================*/
-/*==============================================TAMANHOS RESPONSIVOS===============================================*/
-/*=================================================================================================================*/
-
-@media screen and (max-width: 767px){
-    .bg-menu{
-        background-image: url(/static/imagens/bg-menu-p.png);
-    }
-
-    .min-h{
-        min-height: 50vh;
-    }
-
-
-    .logo-menu-fullscreen-desktop{
-        display: none !important;
-    }
-}
-
-
-@media screen and (min-width: 768px) and (max-width: 1023px){
-    .bg-menu{
-        background-image: url(/static/imagens/bg-menu-m.png);
-    }   
-}
-
-
-
-/* MODAL MENU
-.bg-menu{
-    background-image: url(/static/imagens/bg-menu.png);
-    background-repeat: no-repeat; 
-    background-size: 100%;  
-    
-}
-.bg-menu-right{
-    background-color: rgba(223, 28, 36, 0.91);;
-}
-
-.bg-menu-left{
-    background-color: rgba(49, 39, 128, 0.91);;
-
-
-
-
- 
-
-}*/
