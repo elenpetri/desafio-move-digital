@@ -184,12 +184,12 @@ body, html{
 
 }
 
-.blackout-card img:hover ~ label {
+.blackout-card img:hover ~ span {
     background: white !important;
 
 }
 
-.blackout-card img:hover ~ .card-body .h1-txt-card {
+.blackout-card img:hover ~ div .h1-txt-card {
     color: var(--red);
 }
 
@@ -257,6 +257,8 @@ body, html{
     width: auto;
     padding: 8px;
 }
+
+
 
 
 /*Botão Ver todos lançamentos*/
@@ -523,6 +525,16 @@ body, html{
         text-align: center;
     }
 
+    .google{
+
+        bottom: 199px;
+        color: black;
+        background: rgba(255, 255, 255, 0.6);
+        font-size: 14px;
+        line-height: 1.58;
+        padding: 5px 10px;
+        position: absolute;
+}
 
 }
 
@@ -564,8 +576,19 @@ body, html{
     .sub-txt-carrossel-2{
         margin-bottom: 4px;
     }
-    
+
+    .google{
+        bottom: 224px;
+        color: black;
+        background: rgba(255, 255, 255, 0.6);
+        font-size: 14px;
+        line-height: 1.58;
+        padding: 5px 10px;
+        position: absolute;
+    }
 }
+    
+
 
 @media (min-width: 768px) and (max-width: 1023px){
     #carouselExampleIndicators>div.carousel-inner>div.carousel-item.active>div>h1{
@@ -622,6 +645,15 @@ body, html{
         margin-bottom: 0;
     }
     
+    .google{
+        bottom: 310px;
+        color: black;
+        background: rgba(255, 255, 255, 0.6);
+        font-size: 14px;
+        line-height: 1.58;
+        padding: 5px 10px;
+        position: absolute;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -683,4 +715,21 @@ body, html{
     .logo-menu-fullscreen-mobile {
         display: none;
     }
+
+    .txt-tag-card{ /*novo etilo tag que funciona mac*/
+        bottom: 36px;
+        color: black;
+        background: rgba(255, 255, 255, 0.6);
+        font-size: 14px;
+        font-family: 'GothamBold';
+        line-height: 1.58;
+        padding: 5px 10px;
+        margin-bottom: -15px;
+        width: fit-content;
+        font-family: 'GothamBold';
+    }
 }
+
+
+
+
