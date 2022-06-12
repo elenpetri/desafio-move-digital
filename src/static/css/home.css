@@ -666,6 +666,35 @@ body, html{
         /*Duomo Residencial*/
         font-size: 22px;
     }
+
+    /*================modal menu novo==================*/
+    .body-modal-menu {
+        background-image: url(/static/imagens/bg-menu-m2.png);
+    }
+
+    .menu-left{
+        background-color: var(--blue);
+        width: 33%;
+        filter: opacity(90%);
+    }
+
+    .menu-right{
+        background-color: var(--red);
+        width: 67%;
+        filter: opacity(90%);
+    }
+
+    .logo-menu-fullscreen-mobile {
+        display: none;
+    }
+
+    .btn.fechar-modal {
+        font-size: 22px;
+    }
+
+    .btn.fechar-modal:hover {
+        border: none;
+    }
 }
 
 @media (min-width: 1024px) {
