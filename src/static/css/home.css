@@ -765,6 +765,13 @@ body, html{
         filter: opacity(90%);
     }
 
+    .btn.fechar-modal {
+        font-size: 22px;
+    }
+
+    .btn.fechar-modal:hover {
+        border: none;
+    }
 }
 
 
