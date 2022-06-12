@@ -537,18 +537,6 @@ body, html{
         bottom: 17rem;
     }
 
-    .bg-menu {
-        background-image: url(/static/imagens/bg-menu-p.png);
-    }
-
-    .min-h {
-        min-height: 50vh;
-    }
-
-    .logo-menu-fullscreen-desktop {
-        display: none !important;
-    }
-
     #carrossel-2 {
         /*Todo conteudo da div incluindo h1, h2, button, etc*/
         padding-bottom: 2rem;
@@ -587,7 +575,61 @@ body, html{
     width: fit-content;
     font-family: 'GothamBold';
 }
+    /*================modal menu novo==================*/
+    .body-modal-menu {
+        background-image: url(/static/imagens/bg-menu-p.png);
+    }
 
+    .logo-menu-fullscreen-desktop {
+        display: none !important;
+    }
+
+    .body-modal-menu {
+        height: fit-content !important;
+    }
+
+    .menu-left{
+        background-color: var(--blue);
+        width: 100%;
+        filter: opacity(90%);
+        min-height: 32vh;
+        height: fit-content!important;
+    }
+
+    .menu-right{
+        background-color: var(--red);
+        width: 100%;
+        filter: opacity(90%);
+        min-height: 68vh;
+        height: fit-content!important;
+    }
+
+    .logo-menu-fullscreen-mobile{
+        width: 80%;
+    }
+
+    .btn.fechar-modal {
+        border: none;
+    }
+
+    .btn.fechar-modal:hover {
+        border: none;
+    }
+
+    .text-menu-right ul li {
+        font-size: 26px;
+        font-family: 'GothamBook';
+        color: var(--white);
+    }
+
+    .header-menu-fullscreen-mobile{
+        padding-top: 1rem;
+        margin-bottom: 2.0rem;
+    }
+
+    .image-copyright-desktop{
+        display: none;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1023px){
@@ -670,6 +712,7 @@ body, html{
     /*================modal menu novo==================*/
     .body-modal-menu {
         background-image: url(/static/imagens/bg-menu-m2.png);
+        min-height: 100%;  
     }
 
     .menu-left{
@@ -690,11 +733,21 @@ body, html{
 
     .btn.fechar-modal {
         font-size: 22px;
+        border: none;
     }
 
     .btn.fechar-modal:hover {
         border: none;
     }
+
+    .image-copyright-mobile{
+        display: none;
+    }
+
+    .image-copyright-desktop{
+        display: flex;
+    }
+
 }
 
 @media (min-width: 1024px) {
@@ -796,10 +849,23 @@ body, html{
 
     .btn.fechar-modal {
         font-size: 22px;
+        border: none;
     }
 
     .btn.fechar-modal:hover {
         border: none;
+    }
+
+    .image-copyright-mobile{
+        display: none;
+    }
+
+    .image-copyright-desktop{
+        display: flex;
+    }
+
+    .body-modal-menu{
+        min-height: 100%;  
     }
 }
 
@@ -807,8 +873,7 @@ body, html{
 /*================modal menu novo geral==================*/
 .body-modal-menu{
     background-repeat: no-repeat; 
-    background-size: 100%;
-    
+    background-size: 100%;  
 }
 
 
