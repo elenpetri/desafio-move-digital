@@ -34,7 +34,7 @@ body, html{
     height: 100%;
 }
 
-/* HEADER */
+/* ======================================================HEADER================================================================*/
 .bg-header {
     background-color: var(--red);
 }
@@ -60,7 +60,7 @@ body, html{
     color: var(--white);
 }
 
-/* ÁREA DE BUSCA */
+/* ======================================================ÁREA DE BUSCA=========================================================*/
 .bg-busca {
     background-color: var(--blue) !important;
 }
@@ -113,7 +113,7 @@ body, html{
     color: #737380 !important;
 }
 
-/* CARROSSEL */
+/* ======================================================CAROUSEL==============================================================*/
 #btn-carrossel-div button {
     background-color: #EEEEEE;
 }
@@ -122,7 +122,7 @@ body, html{
     margin-left: 6rem;
 }
 
-/*====Carrossel 2====*/
+/*Carrossel pag.2*/
 #carrossel-2 {
     /*Todo conteudo da div incluindo h1, h2, button, etc*/
     text-align: start;
@@ -150,7 +150,7 @@ body, html{
     font-weight: 400;
 }
 
-/* Modal Buscar Lançamentos (Mobile)*/
+/* Modal Buscar Lançamentos (Mobile) */
 .txt-area-busca-mobile {
     padding: 1.5rem;
     font-weight: 400;
@@ -173,8 +173,7 @@ body, html{
     border: none;
 }
 
-/*Conteúdo album/catálogo */
-
+/* ======================================================CONTEÚDO ALBUM/CATÁLOGO===============================================*/
 .card.card-style {
     border-width: 0;
 }
@@ -258,15 +257,11 @@ body, html{
     padding: 8px;
 }
 
-
-
-
-/*Botão Ver todos lançamentos*/
+/* ===================================================BOTÃO VER TODOS LANÇAMENTOS===========================================*/
 .container-btn-tds-lancamentos{
     align-items: center;
     text-align: center;
 }
-
 
 .btn-ver-tds-lancamentos{
     padding: 16px;
@@ -287,8 +282,7 @@ body, html{
     color: white;
 }
 
-/* Card Fale com um corretor*/
-
+/* ===================================================CARD FALE COM UM CORRETOR===========================================*/
 .bg-card-corretor {
     background-color: #fefefe;
 }
@@ -334,7 +328,7 @@ body, html{
     color: white;
 }
 
-/*Footer*/
+/* ===================================================FOOTER===========================================*/
 .line-footer{
     background-color: var(--red);
     height: 4px;
@@ -358,27 +352,11 @@ body, html{
     background-color: #271F6C;
 }
 
-/*Modal Menu*/
+/* ===================================================MODAL MENU===========================================*/
 .bg-menu{
-    background-image: url(/static/imagens/bg-menu-g.png);
     background-repeat: no-repeat; 
     background-size: 100%;
-    
 }
-
-.bg-menu-left {
-    background-color: var(--blue);
-    filter: opacity(90%);
-}
-
-.bg-menu-right {
-    background-color: var(--red);
-    filter: opacity(90%);
-}
-
-.menu {
-  height: 100%;
- }
 
  .modal-dialog.modal-fullscreen.w-auto {
     width: auto !important;
@@ -392,7 +370,13 @@ body, html{
 
 .text-menu-left,.text-menu-left ul li {
     font-size: 16px;
+    font-family: 'GothamBook';
     color: var(--white);
+}
+
+.body-modal-menu{
+    background-repeat: no-repeat; 
+    background-size: 100%;  
 }
 
 /*=================================================================================================================*/
@@ -403,6 +387,7 @@ body, html{
         width: 80%;
     }
 
+/* ======================================================HEADER================================================================*/
     .txt-botao-header {
         /*inferior a 1024px esconde os textos dos botões do header que aparecem para desktop*/
         visibility: visible;
@@ -411,12 +396,13 @@ body, html{
         display: none;
     }
 
+/* ======================================================CAROUSEL==============================================================*/
     .botao-header-desktop {
         /*esconde botão de Buscar lançamentos para exibir o botão em modo mobile*/
         display: none !important;
     }
 
-    #carouselExampleIndicators>div.carousel-inner>div.carousel-item.active>div>h1 {
+    #carouselIndicators>div.carousel-inner>div.carousel-item.active>div>h1 {
         font-size: 35px;
         width: 95%;
     }
@@ -440,28 +426,28 @@ body, html{
         left: 5% !important;
     }
 
-    #carouselExampleIndicators>div.carousel-inner>div.carousel-item.active>div>div {
+    #carouselIndicators>div.carousel-inner>div.carousel-item.active>div>div {
         width: 205px;
     }
 
-    #carouselExampleIndicators>div.carousel-inner>div.carousel-item.active>div>div {
+    #carouselIndicators>div.carousel-inner>div.carousel-item.active>div>div {
         padding-top: 0.5rem;
     }
 
-    #carouselExampleIndicators>div.carousel-inner>div.carousel-item.active>div>div>button {
+    #carouselIndicators>div.carousel-inner>div.carousel-item.active>div>div>button {
         color: var(--white);
         background-color: var(--red);
         border-radius: 3px;
         border: none;
     }
 
-    #carouselExampleIndicators>div.carousel-inner>div.carousel-item.active>div>div>button:hover {
+    #carouselIndicators>div.carousel-inner>div.carousel-item.active>div>div>button:hover {
         background-color: black;
         color: var(--white);
         border: none;
     }
 
-    #carouselExampleIndicators>div.carousel-indicators.justify-content-start {
+    #carouselIndicators>div.carousel-indicators.justify-content-start {
         bottom: 250px;
         color: var(--white);
         margin-left: 50px;
@@ -497,6 +483,7 @@ body, html{
         top: 21.4rem;
     }
 
+/* ===================================================BOTÃO VER TODOS LANÇAMENTOS===========================================*/
     .btn-ver-tds-lancamentos {
         width: 15.625rem;
         margin-left: 3.125rem;
@@ -505,7 +492,7 @@ body, html{
         line-height: 16px;
     }
 
-    /* Card Fale com um corretor*/
+/* ===================================================CARD FALE COM UM CORRETOR===========================================*/
     .card-title {
         /*Fale com um corretor*/
         font-size: 2.625rem;
@@ -527,7 +514,9 @@ body, html{
 }
 
 @media (max-width: 767px) {
-    #carouselExampleIndicators>div.carousel-inner>div.carousel-item.active>div>h1{
+
+/* ======================================================CAROUSEL==============================================================*/
+    #carouselIndicators>div.carousel-inner>div.carousel-item.active>div>h1{
         /* Texto carrossel "Novo conceito de inteligência desbloqueado"*/
         font-size: 32px;
     }
@@ -535,18 +524,6 @@ body, html{
     div.carousel-caption {
         padding-bottom: 1rem;
         bottom: 17rem;
-    }
-
-    .bg-menu {
-        background-image: url(/static/imagens/bg-menu-p.png);
-    }
-
-    .min-h {
-        min-height: 50vh;
-    }
-
-    .logo-menu-fullscreen-desktop {
-        display: none !important;
     }
 
     #carrossel-2 {
@@ -557,25 +534,9 @@ body, html{
     .sub-txt-carrossel-2{
         margin-bottom: 4px;
     }
-  /*Conteúdo album/catálogo */
-    
+
+/* ======================================================CONTEÚDO ALBUM/CATÁLOGO===============================================*/
   .txt-tag-card{ 
-    /*novo estilo tag que funciona mac*/
-    bottom: 36px;
-    color: black;
-    background: rgba(255, 255, 255, 0.6);
-    font-size: 14px;
-    font-family: 'GothamBold';
-    line-height: 1.58;
-    padding: 5px 10px;
-    margin-bottom: -15px;
-    width: fit-content;
-    font-family: 'GothamBold';
-}
-    /*Conteúdo album/catálogo */
-
-    .txt-tag-card{ 
-    /*novo estilo tag que funciona mac*/
     bottom: 36px;
     color: black;
     background: rgba(255, 255, 255, 0.6);
@@ -588,10 +549,84 @@ body, html{
     font-family: 'GothamBold';
 }
 
+    .txt-tag-card { 
+    bottom: 36px;
+    color: black;
+    background: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    font-family: 'GothamBold';
+    line-height: 1.58;
+    padding: 5px 10px;
+    margin-bottom: -15px;
+    width: fit-content;
+    font-family: 'GothamBold';
+}
+    .altura-catalogo-resp{
+        margin-top: -17rem;
+    }
+
+    
+/* ===================================================MODAL MENU===========================================*/
+    .body-modal-menu {
+        background-image: url(/static/imagens/bg-menu-p.png);
+    }
+
+    .logo-menu-fullscreen-desktop {
+        display: none !important;
+    }
+
+    .body-modal-menu {
+        height: fit-content !important;
+    }
+
+    .menu-left{
+        background-color: var(--blue);
+        width: 100%;
+        filter: opacity(90%);
+        min-height: 32vh;
+        height: fit-content!important;
+    }
+
+    .menu-right{
+        background-color: var(--red);
+        width: 100%;
+        filter: opacity(90%);
+        min-height: 68vh;
+        height: fit-content!important;
+    }
+
+    .logo-menu-fullscreen-mobile{
+        width: 80%;
+    }
+
+    .btn.fechar-modal {
+        border: none;
+    }
+
+    .btn.fechar-modal:hover {
+        border: none;
+    }
+
+    .text-menu-right ul li {
+        font-size: 26px;
+        font-family: 'GothamBook';
+        color: var(--white);
+    }
+
+    .header-menu-fullscreen-mobile{
+        padding-top: 1rem;
+        margin-bottom: 2.0rem;
+    }
+
+    .image-copyright-desktop{
+        display: none;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1023px){
-    #carouselExampleIndicators>div.carousel-inner>div.carousel-item.active>div>h1{
+
+/* ======================================================CAROUSEL==============================================================*/
+    #carouselIndicators>div.carousel-inner>div.carousel-item.active>div>h1{
             /* Texto carrossel "Novo conceito de inteligência desbloqueado"*/
         font-size: 24px;
     }
@@ -602,7 +637,8 @@ body, html{
     }
 
     .bg-menu {
-        background-image: url(/static/imagens/bg-menu-m.png);
+        background-image: url(/static/imagens/bg-menu-m2.png);
+        width: 100%;
     }   
 
     div.carousel-caption {
@@ -618,12 +654,12 @@ body, html{
         font-size: 0.75rem;
     }
 
-    #carouselExampleIndicators>div.carousel-indicators.justify-content-start {
+    #carouselIndicators>div.carousel-indicators.justify-content-start {
         /*Posicionamento dos indincadores do carrossel*/
         bottom: 185px;
     }
 
-    /*Carrossel 2*/
+    /*Carrossel pag.2*/
 
     div.carousel-caption.carousel-caption-2 {
         bottom: 11rem;
@@ -645,10 +681,12 @@ body, html{
         margin-bottom: 0;
     }
 
-    /*Conteúdo album/catálogo */
-    
+/* ======================================================CONTEÚDO ALBUM/CATÁLOGO===============================================*/    
+    .altura-catalogo-resp{
+        margin-top: -14rem;
+    }
+
     .txt-tag-card{ 
-        /*novo estilo tag que funciona mac*/
         bottom: 36px;
         color: black;
         background: rgba(255, 255, 255, 0.6);
@@ -665,19 +703,62 @@ body, html{
         /*Duomo Residencial*/
         font-size: 22px;
     }
+
+/* ===================================================MODAL MENU===========================================*/
+    .body-modal-menu {
+        background-image: url(/static/imagens/bg-menu-m2.png);
+        min-height: 100%;  
+    }
+
+    .menu-left{
+        background-color: var(--blue);
+        width: 33%;
+        filter: opacity(90%);
+    }
+
+    .menu-right{
+        background-color: var(--red);
+        width: 67%;
+        filter: opacity(90%);
+    }
+
+    .logo-menu-fullscreen-mobile {
+        display: none;
+    }
+
+    .btn.fechar-modal {
+        font-size: 22px;
+        border: none;
+    }
+
+    .btn.fechar-modal:hover {
+        border: none;
+    }
+
+    .image-copyright-mobile{
+        display: none;
+    }
+
+    .image-copyright-desktop{
+        display: flex;
+    }
+
 }
 
 @media (min-width: 1024px) {
+
+/* ======================================================HEADER================================================================*/
     .botao-header-mobile {
         /*esconde botão de Buscar lançamentos para exibir o botão em modo desktop*/
         display: none !important;
     }
+
+/* ======================================================CAROUSEL==============================================================*/
     div h1.txt-carrossel-1 {
         /*Novo conceito de inteligência desbloqueado.*/
         font-weight: 300;
         width: 25%;
         font-size: 60px;
-
     }
 
     .sub-txt-carrossel-1 {
@@ -721,7 +802,12 @@ body, html{
         font-weight: 300;
         width: 25% !important;
         font-size: 60px;
-    }   
+    }
+    
+/* ===================================================MODAL MENU===========================================*/
+    .body-modal-menu {
+        background-image: url(/static/imagens/bg-menu-g.png);
+    }
 
     .logo-menu-fullscreen-mobile {
         display: none;
@@ -739,7 +825,44 @@ body, html{
         width: fit-content;
         font-family: 'GothamBold';
     }
+
+    .menu-left{
+        background-color: var(--blue);
+        width: 25%;
+        filter: opacity(90%);
+    }
+
+    .menu-right{
+        background-color: var(--red);
+        width: 75%;
+        filter: opacity(90%);
+    }
+
+    .btn.fechar-modal {
+        font-size: 22px;
+        border: none;
+    }
+
+    .btn.fechar-modal:hover {
+        border: none;
+    }
+
+    .image-copyright-mobile{
+        display: none;
+    }
+
+    .image-copyright-desktop{
+        display: flex;
+    }
+
+    .body-modal-menu{
+        min-height: 100%;  
+    }
 }
+
+
+/*================modal menu novo geral==================*/
+
 
 
 
