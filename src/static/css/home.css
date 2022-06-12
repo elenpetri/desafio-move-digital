@@ -562,7 +562,7 @@ body, html{
 }
     /*Conteúdo album/catálogo */
 
-    .txt-tag-card{ 
+    .txt-tag-card { 
     /*novo estilo tag que funciona mac*/
     bottom: 36px;
     color: black;
@@ -575,6 +575,11 @@ body, html{
     width: fit-content;
     font-family: 'GothamBold';
 }
+
+    .altura-catalogo-resp{
+        margin-top: -17rem;
+    }
+
     /*================modal menu novo==================*/
     .body-modal-menu {
         background-image: url(/static/imagens/bg-menu-p.png);
@@ -690,6 +695,10 @@ body, html{
 
     /*Conteúdo album/catálogo */
     
+    .altura-catalogo-resp{
+        margin-top: -14rem;
+    }
+
     .txt-tag-card{ 
         /*novo estilo tag que funciona mac*/
         bottom: 36px;
