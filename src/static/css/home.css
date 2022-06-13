@@ -803,7 +803,37 @@ body, html{
         width: 25% !important;
         font-size: 60px;
     }
-    
+
+    .altura-catalogo-resp{
+        margin-top: 2rem;
+    }
+
+/* ===================================================BOTÃO WHATSAPP===========================================*/
+    .whatsapp-float{
+        margin-top: -55px;
+        margin-bottom: 20px;
+
+    }
+
+    .btn.btn-whatsapp-float{
+        background-color: var(--red);
+        color: var(--white);
+        border-radius: 3px;
+        border: none;
+        height: 64px;
+        width: 156px;
+        left: 1%;
+        font-size: 14px;
+        font-family: 'Gothambook';
+        box-shadow: 0px 16px 42px;
+    }
+
+    .btn.btn-whatsapp-float:hover {
+        background-color: black;
+        color: var(--white);
+        border: none;
+    }
+        
 /* ===================================================MODAL MENU===========================================*/
     .body-modal-menu {
         background-image: url(/static/imagens/bg-menu-g.png);
