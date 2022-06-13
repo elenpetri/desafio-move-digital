@@ -124,8 +124,8 @@ body, html{
 
 #btn-carrossel-div > button.estilo-indicadores{
     /*Altera o estilos dos indicadores do carrossel*/
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     border-radius: 50px;
     border-top: none;
     border-bottom: none;
