@@ -115,11 +115,29 @@ body, html{
 
 /* ======================================================CAROUSEL==============================================================*/
 #btn-carrossel-div button {
-    background-color: #EEEEEE;
+    background-color: #a39f9f;
 }
 
 .carousel-indicators.justify-content-start {
     margin-left: 6rem;
+}
+
+#btn-carrossel-div > button.estilo-indicadores{
+    /*Altera o estilos dos indicadores do carrossel*/
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    border-top: none;
+    border-bottom: none;
+}
+
+#btn-carrossel-div > button.active.estilo-indicadores{
+    /*Altera o estilos dos indicadores do carrossel*/
+    width: 35px;
+    height: 10px;
+    border-radius: 50px;
+    border: 2px solid #a39f9f;
+    background-color: transparent;
 }
 
 /*Carrossel pag.2*/
@@ -466,7 +484,6 @@ body, html{
     #carouselIndicators>div.carousel-indicators.justify-content-start {
         bottom: 250px;
         color: var(--white);
-        margin-left: 50px;
     }
 
     .carousel-indicators.justify-content-start {
