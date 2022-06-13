@@ -173,6 +173,26 @@ body, html{
     border: none;
 }
 
+/* ======================================================BOTÃO WHATSAPP===============================================*/
+.btn-whatsapp-float{
+    background-color: var(--red);
+    color: var(--white);
+    border-radius: 3px;
+    border: none;
+    height: 64px;
+    width: 156px;
+    font-size: 14px;
+    font-family: 'Gothambook';
+    box-shadow: 0px 16px 42px;
+}
+
+.btn-whatsapp-float:hover {
+    background-color: black;
+    color: var(--white);
+    border: none;
+}
+
+
 /* ======================================================CONTEÚDO ALBUM/CATÁLOGO===============================================*/
 .card.card-style {
     border-width: 0;
@@ -237,10 +257,6 @@ body, html{
     border-radius: 0;
 }
 
-/*Tag informativa das imagens (pré lançamento, pronto para morar ...*/
-.container {
-    position: relative;
-}
 
 #image {
     position: absolute;
@@ -535,6 +551,27 @@ body, html{
         margin-bottom: 4px;
     }
 
+    /* ======================================================BOTÃO WHATSAPP===============================================*/    
+    .txt-whatsapp{
+        display: none;
+    }
+
+    .whatsapp-float{
+        position: fixed!important;
+        right: 17px;
+        margin-top: 12vh;
+    }
+
+    .btn-whatsapp-float{
+        height: 54px;
+        width: 54px;;
+        font-size: 14px;
+    }
+
+    .whatsapp-float.sticky-top.container{
+        width: auto;
+    }
+
 /* ======================================================CONTEÚDO ALBUM/CATÁLOGO===============================================*/
   .txt-tag-card{ 
     bottom: 36px;
@@ -681,11 +718,15 @@ body, html{
         margin-bottom: 0;
     }
 
-/* ======================================================CONTEÚDO ALBUM/CATÁLOGO===============================================*/    
-    .altura-catalogo-resp{
+/* ======================================================BOTÃO WHATSAPP===============================================*/    
+    .whatsapp-float{
         margin-top: -14rem;
+        margin-bottom: 20px;
+        text-align: end;
+        margin-right: 300px;
     }
-
+        
+/* ======================================================CONTEÚDO ALBUM/CATÁLOGO===============================================*/    
     .txt-tag-card{ 
         bottom: 36px;
         color: black;
@@ -703,7 +744,7 @@ body, html{
         /*Duomo Residencial*/
         font-size: 22px;
     }
-
+    
 /* ===================================================MODAL MENU===========================================*/
     .body-modal-menu {
         background-image: url(/static/imagens/bg-menu-m2.png);
@@ -810,28 +851,10 @@ body, html{
 
 /* ===================================================BOTÃO WHATSAPP===========================================*/
     .whatsapp-float{
-        margin-top: -55px;
+        margin-top: -35px;
         margin-bottom: 20px;
-
-    }
-
-    .btn.btn-whatsapp-float{
-        background-color: var(--red);
-        color: var(--white);
-        border-radius: 3px;
-        border: none;
-        height: 64px;
-        width: 156px;
-        left: 1%;
-        font-size: 14px;
-        font-family: 'Gothambook';
-        box-shadow: 0px 16px 42px;
-    }
-
-    .btn.btn-whatsapp-float:hover {
-        background-color: black;
-        color: var(--white);
-        border: none;
+        text-align: end;
+        margin-right: 
     }
         
 /* ===================================================MODAL MENU===========================================*/
